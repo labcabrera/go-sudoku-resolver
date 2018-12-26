@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Print("It works\n")
 	board := new(sudoku.Board)
-	sudoku.LoadFromFile(board, "./src/github.com/labcabrera/go-sudoku-resolver/resources/sudoku.txt")
+	sudoku.LoadFromFile(board, "./resources/sudoku.txt")
 	
 	fmt.Print("Loaded board:\n")
 	sudoku.PrintBoard(board)
