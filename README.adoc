@@ -1,0 +1,18 @@
+= GO Sudoku resolver training project
+
+== Introducción
+
+Este repositorio es sólamente un ejemplo de https://golang.org/[golang].
+
+Para construir el proyecto utilizamos el plugin de gradle https://github.com/gogradle/gogradle[gogradle]:
+
+----
+./gradlew clean build
+----
+
+Esto generará el ejecutable en el directorio _.gogradle_. Para ejecutar el ejemplo utilizaremos el
+comando:
+
+----
+./.gogradle/go-sudoku-resolver-linux-amd64 resources/sudoku.txt
+----
