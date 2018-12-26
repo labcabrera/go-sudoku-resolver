@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Printf("Sudoku demo resolver\n")	
 	var board[100] int
-	var err = readBoard(&board, "./resources/sudoku.txt")
+	var err = readBoard(&board, os.Args[1])
 	if err != nil {
 		log.Fatalf("Error reading board: %s", err)
 	}
